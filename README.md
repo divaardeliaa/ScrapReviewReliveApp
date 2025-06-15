@@ -1,4 +1,5 @@
 # Sentiment Analysis on Relive App Reviews
+This project focuses on performing sentiment analysis on the reviews of the **Relive App**, which is a sports-focused application. The analysis is based on reviews obtained via web scraping from the Google Play Store. The project aims to explore user sentiments towards the app, identify patterns, and classify reviews into positive, neutral, or negative sentiments.
 
 | **Title**                           | **Author**            | **Date**    | **Output**                                                                                             |
 |-------------------------------------|-----------------------|-------------|--------------------------------------------------------------------------------------------------------|
@@ -23,9 +24,6 @@
  ├── README.md            # Project introduction (this file)
 
 ```
-
-This project focuses on performing sentiment analysis on the reviews of the **Relive App**, which is a sports-focused application. The analysis is based on reviews obtained via web scraping from the Google Play Store. The project aims to explore user sentiments towards the app, identify patterns, and classify reviews into positive, neutral, or negative sentiments.
-
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Notebooks](#notebooks)
