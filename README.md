@@ -1,10 +1,8 @@
 # Sentiment Analysis on Relive App Reviews
----
-title: "Sentiment Analysis on Relive App Reviews"
-author: "Diva Ardelia Alyadrus"
-date: "15/03/2025"
-output: df_reliverev.csv (raw) reliverev_cleaned.csv (pre-processed) reliverev_sentiment.csv (final sentiment)
----
+
+| **Title**                           | **Author**            | **Date**    | **Output**                                                                                             |
+|-------------------------------------|-----------------------|-------------|--------------------------------------------------------------------------------------------------------|
+| Sentiment Analysis on Relive App Reviews | Diva Ardelia Alyadrus | 15/03/2025  | df_reliverev.csv (raw), reliverev_cleaned.csv (pre-processed), reliverev_sentiment.csv (final sentiment) |
 
 ## Repository Structure
 
