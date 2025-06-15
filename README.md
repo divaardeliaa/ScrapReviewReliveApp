@@ -1,4 +1,30 @@
 # Sentiment Analysis on Relive App Reviews
+---
+title: "Sentiment Analysis on Relive App Reviews"
+author: "Diva Ardelia Alyadrus"
+date: "15/03/2025"
+output: df_reliverev.csv (raw) reliverev_cleaned.csv (pre-processed) reliverev_sentiment.csv (final sentiment)
+---
+
+## Repository Structure
+
+```
+📂 Sentiment-Analysis-ReliveApp
+ ├── data/                # Raw and processed datasets
+ │   ├── df_reliverev.csv     # Original scraped dataset
+ │   ├── reliverev_cleaned.csv  # Processed dataset (cleaned)
+ │   ├── reliverev_sentiment.csv # Dataset with sentiment scores
+ │
+ ├── notebooks/           # Jupyter Notebooks for analysis
+ │   ├── 01-relive-reviews-scrapping.ipynb  # Scraping Google Play Store reviews
+ │   ├── 02-relive-reviews-exploratory-data-analysis.ipynb  # EDA on scraped reviews
+ │   ├── 03-relive_reviews_data_preprocessing.ipynb  # Data cleaning and preprocessing
+ │   ├── 04-relive_reviews_sentiment_analysis.ipynb  # Sentiment analysis on the reviews
+ │   ├── 05-relive_reviews_tf-idf.ipynb  # TF-IDF for feature extraction
+ │
+ ├── README.md            # Project introduction (this file)
+
+```
 
 This project focuses on performing sentiment analysis on the reviews of the **Relive App**, which is a sports-focused application. The analysis is based on reviews obtained via web scraping from the Google Play Store. The project aims to explore user sentiments towards the app, identify patterns, and classify reviews into positive, neutral, or negative sentiments.
 
@@ -49,10 +75,10 @@ This project uses the following datasets:
 1. **df_reliverev.csv**  
    The raw data scraped from Google Play Store, containing user reviews, scores, and other metadata.
 
-2. **reliverev_cleaned.csv**  
+2. **df_reliverev_cleaned.csv**  
    A cleaned version of the data after preprocessing steps such as handling missing values and transforming text data.
 
-3. **reliverev_sentiment.csv**  
+3. **df_reliverev_sentiment.csv**  
    Contains the sentiment classification results for each review (positive, neutral, negative).
 
 ### Structure of `df_reliverev`
