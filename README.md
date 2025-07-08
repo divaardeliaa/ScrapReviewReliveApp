@@ -111,3 +111,83 @@ Make sure you have Python 3.7+ installed on your system. You will also need the 
 - nltk
 - googletrans
 - plotly
+
+---
+
+## How to Run
+To run this project:
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your_username/Sentiment-Analysis-ReliveApp.git](https://github.com/your_username/Sentiment-Analysis-ReliveApp.git)
+    cd Sentiment-Analysis-ReliveApp
+    ```
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: `venv\Scripts\activate`
+    ```
+3.  **Install the dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    # If requirements.txt is not provided, you can install them manually:
+    # pip install pandas numpy matplotlib seaborn scikit-learn tensorflow nltk googletrans plotly
+    ```
+4.  **Download NLTK data:**
+    ```python
+    import nltk
+    nltk.download('stopwords')
+    nltk.download('words')
+    nltk.download('wordnet')
+    nltk.download('punkt')
+    ```
+5.  **Run the Jupyter Notebooks:**
+    Navigate to the `notebooks/` directory and open the notebooks in sequential order (01 to 05) to follow the project workflow.
+    ```bash
+    jupyter notebook
+    ```
+
+---
+
+## Exploratory Data Analysis (EDA)
+The EDA phase (covered in `02-relive-reviews-exploratory-data-analysis.ipynb`) involves:
+-   Loading and inspecting the raw scraped data.
+-   Checking for missing values and data types.
+-   Analyzing the distribution of review scores.
+-   Visualizing the word frequency in the review content.
+-   Identifying common themes and patterns in the reviews.
+
+---
+
+## Data Preprocessing
+The data preprocessing phase (covered in `03-relive_reviews_data_preprocessing.ipynb`) includes:
+-   Handling missing values.
+-   Text cleaning:
+    -   Lowercasing.
+    -   Removing punctuation, numbers, and special characters.
+    -   Tokenization.
+    -   Removing stop words.
+    -   Stemming/Lemmatization.
+    -   Spell correction.
+-   Feature engineering for sentiment analysis.
+
+---
+
+## Sentiment Analysis
+The sentiment analysis phase (covered in `04-relive_reviews_sentiment_analysis.ipynb` and `05-relive_reviews_tf-idf.ipynb`) focuses on:
+-   **Text Representation:**
+    -   **TF-IDF:** Transforming text data into numerical features using Term Frequency-Inverse Document Frequency.
+    -   **Universal Sentence Encoder (USE):** Using pre-trained deep learning models to generate dense embeddings for sentences.
+    -   **Combined Embeddings:** Exploring the combination of TF-IDF and USE embeddings.
+-   **Model Training:**
+    -   Splitting data into training and testing sets.
+    -   Training various machine learning classifiers: Linear SVM, Logistic Regression, Naive Bayes, XGBoost, and Random Forest.
+-   **Model Evaluation:**
+    -   Assessing model performance using metrics such as accuracy, precision, recall, and F1-score.
+    -   Analyzing confusion matrices and classification reports for each model and embedding strategy.
+    -   Comparing the performance of different classifiers and embedding techniques through visualizations.
+
+---
+
+## References
+-   Sentiment Analysis on IMDB dataset: [https://github.com/FarhanaTeli/Sentiment_Analysis_IMDB](https://github.com/FarhanaTeli/Sentiment_Analysis_IMDB)
+-   TF-IDF implementation: [https://github.com/Wittline/tf-idf](https://github.com/Wittline/tf-idf)
