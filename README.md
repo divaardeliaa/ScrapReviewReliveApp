@@ -216,7 +216,7 @@ This section provides key visualizations that offer insights into the dataset an
 ![Monthly Review Trend](assets/visual6.png)
 *This visualization visualize distribution of sentiment analysis towards relive app based on its reviews.*
 *Review Distribution by App Version:*
-![Word Cloud of Common Terms](assets/visual7.jpg)
+![Word Cloud of Common Terms](assets/visual7.png)
 *A word cloud visually represents word frequency, with larger words indicating higher occurrence.*
 *Heatmap of Feature Correlation:*
 ![Sentiment Development Over Time](assets/visual8.png)
