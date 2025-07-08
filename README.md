@@ -43,6 +43,7 @@ This project focuses on performing sentiment analysis on the reviews of the **Re
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)
 - [Data Preprocessing](#data-preprocessing)
 - [Sentiment Analysis](#sentiment-analysis)
+- [Visualizations](#visualizations)
 - [References](#references)
 
 ## Project Overview
@@ -190,8 +191,39 @@ The sentiment analysis phase (covered in `04-relive_reviews_sentiment_analysis.i
 
 ### Model Performance
 Here is a comparison of the sentiment classification model accuracies across different embedding strategies:
+
 *Classifier Accuracies with Different Embeddings:*
 ![Accuracies_by_embeddings](assets/visual5.png)
+
+---
+
+## Visualizations
+This section provides key visualizations that offer insights into the dataset and model performance.
+
+*Distribution of Review Scores:*
+![Distribution of Review Scores](assets/visual1.png)
+*This visualization shows the spread of review scores given by users.*
+*Review Count Over Time:*
+![Review Count Over Time](assets/visual2.jpg)
+*This chart illustrates the volume of reviews collected over a period, indicating trends in user engagement.*
+*Top Word Frequencies:*
+![Top Word Frequencies](assets/visual3.png)
+*This graph displays the most frequently occurring words in the reviews, providing initial insights into key topics.*
+*Word Cloud of Common Terms:*
+![Word count before and after Stopword Removal](assets/visual4.png)
+*A comparison between word count before and after stopword removal.*
+*Sentiment Analysis Distribution:*
+![Monthly Review Trend](assets/visual6.png)
+*This visualization visualize distribution of sentiment analysis towards relive app based on its reviews.*
+*Review Distribution by App Version:*
+![Word Cloud of Common Terms](assets/visual7.jpg)
+*A word cloud visually represents word frequency, with larger words indicating higher occurrence.*
+*Heatmap of Feature Correlation:*
+![Sentiment Development Over Time](assets/visual8.png)
+*This visualization illustrates how the sentiment (positive, neutral, negative) of reviews changes or trends over different time periods, providing insights into user satisfaction evolution.*
+*Classifier Accuracies with Different Embeddings:*
+![Classifier Accuracies with Different Embeddings](assets/visual5.png)
+*This graph illustrates the performance of various models (Linear SVM, Logistic Regression, XGBoost, Random Forest) using TF-IDF, USE, and the combined TF-IDF+USE embeddings. It highlights which embedding strategy yields better results for each classifier.*
 
 ---
 
