@@ -3,16 +3,16 @@ This project focuses on performing sentiment analysis on the reviews of the **Re
 
 | **Title**                           | **Author**            | **Date**    | **Output**                                                                                             |
 |-------------------------------------|-----------------------|-------------|--------------------------------------------------------------------------------------------------------|
-| Sentiment Analysis on Relive App Reviews | Diva Ardelia Alyadrus | 15/03/2025  | df_reliverev.csv (raw), reliverev_cleaned.csv (pre-processed), reliverev_sentiment.csv (final sentiment) |
+| Sentiment Analysis on Relive App Reviews | Diva Ardelia Alyadrus | 15/03/2025  | df_reliveref.csv (raw), df_reliverev_clean (pre-processed), df_reliverev_sentiment.csv (final sentiment) |
 
 ## Repository Structure
 
 ```
 📂 Sentiment-Analysis-ReliveApp
  ├── data/                # Raw and processed datasets
- │   ├── df_reliverev.csv     # Original scraped dataset
- │   ├── reliverev_cleaned.csv  # Processed dataset (cleaned)
- │   ├── reliverev_sentiment.csv # Dataset with sentiment scores
+ │   ├── df_reliveref   # Original scraped dataset
+ │   ├── df_reliverev_clean.csv  # Processed dataset (cleaned)
+ │   ├── df_reliverev_sentiment.csv # Dataset with sentiment scores
  │
  ├── notebooks/           # Jupyter Notebooks for analysis
  │   ├── 01-relive-reviews-scrapping.ipynb  # Scraping Google Play Store reviews
