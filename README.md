@@ -9,19 +9,29 @@ This project focuses on performing sentiment analysis on the reviews of the **Re
 
 ```
 📂 Sentiment-Analysis-ReliveApp
- ├── data/                # Raw and processed datasets
- │   ├── df_reliveref   # Original scraped dataset
- │   ├── df_reliverev_clean.csv  # Processed dataset (cleaned)
- │   ├── df_reliverev_sentiment.csv # Dataset with sentiment scores
- │
- ├── notebooks/           # Jupyter Notebooks for analysis
- │   ├── 01-relive-reviews-scrapping.ipynb  # Scraping Google Play Store reviews
- │   ├── 02-relive-reviews-exploratory-data-analysis.ipynb  # EDA on scraped reviews
- │   ├── 03-relive_reviews_data_preprocessing.ipynb  # Data cleaning and preprocessing
- │   ├── 04-relive_reviews_sentiment_analysis.ipynb  # Sentiment analysis on the reviews
- │   ├── 05-relive_reviews_tf-idf.ipynb  # TF-IDF for feature extraction
- │
- ├── README.md            # Project introduction (this file)
+├── assets/              # Directory for images and other visual assets
+│   ├── visual1.png
+│   ├── visual2.jpg
+│   ├── visual3.png
+│   ├── visual4.png
+│   ├── visual5.png
+│   ├── visual6.png
+│   ├── visual7.jpg
+│   ├── visual8.png
+│
+├── data/                # Raw and processed datasets
+│   ├── df_reliverev.csv     # Original scraped dataset
+│   ├── reliverev_cleaned.csv  # Processed dataset (cleaned)
+│   ├── reliverev_sentiment.csv # Dataset with sentiment scores
+│
+├── notebooks/           # Jupyter Notebooks for analysis
+│   ├── 01-relive-reviews-scrapping.ipynb  # Scraping Google Play Store reviews
+│   ├── 02-relive-reviews-exploratory-data-analysis.ipynb  # EDA on scraped reviews
+│   ├── 03-relive_reviews_data_preprocessing.ipynb  # Data cleaning and preprocessing
+│   ├── 04-relive_reviews_sentiment_analysis.ipynb  # Sentiment analysis on the reviews
+│   ├── 05-relive_reviews_tf-idf.ipynb  # TF-IDF for feature extraction
+│
+├── README.md            # Project introduction (this file)
 
 ```
 ## Table of Contents
@@ -48,51 +58,43 @@ The **Relive App** is a popular mobile application used to record and share spor
 ## Notebooks
 The project is divided into the following Jupyter Notebooks:
 
-1. **01-relive-reviews-scrapping.ipynb**  
-   Scraping the reviews of the Relive app from the Google Play Store using web scraping techniques.
+1.  **01-relive-reviews-scrapping.ipynb** Scraping the reviews of the Relive app from the Google Play Store using web scraping techniques.
 
-2. **02-relive-reviews-exploratory-data-analysis.ipynb**  
-   Performing exploratory data analysis (EDA) on the scraped reviews to understand their distribution and key statistics.
+2.  **02-relive-reviews-exploratory-data-analysis.ipynb** Performing exploratory data analysis (EDA) on the scraped reviews to understand their distribution and key statistics.
 
-3. **03-relive_reviews_data_preprocessing.ipynb**  
-   Data cleaning and preprocessing, including handling missing values, outliers, and transforming text data for analysis.
+3.  **03-relive_reviews_data_preprocessing.ipynb** Data cleaning and preprocessing, including handling missing values, outliers, and transforming text data for analysis.
 
-4. **04-relive_reviews_sentiment_analysis.ipynb**  
-   Performing sentiment analysis on the reviews using machine learning models.
+4.  **04-relive_reviews_sentiment_analysis.ipynb** Performing sentiment analysis on the reviews using machine learning models.
 
-5. **05-relive_reviews_tf-idf.ipynb**  
-   Implementing TF-IDF for transforming text data into numerical features for classification tasks.
+5.  **05-relive_reviews_tf-idf.ipynb** Implementing TF-IDF for transforming text data into numerical features for classification tasks.
 
 ---
 
 ## Data
 This project uses the following datasets:
 
-1. **df_reliverev.csv**  
-   The raw data scraped from Google Play Store, containing user reviews, scores, and other metadata.
+1.  **df_reliverev.csv** The raw data scraped from Google Play Store, containing user reviews, scores, and other metadata.
 
-2. **df_reliverev_cleaned.csv**  
-   A cleaned version of the data after preprocessing steps such as handling missing values and transforming text data.
+2.  **df_reliverev_cleaned.csv** A cleaned version of the data after preprocessing steps such as handling missing values and transforming text data.
 
-3. **df_reliverev_sentiment.csv**  
-   Contains the sentiment classification results for each review (positive, neutral, negative).
+3.  **df_reliverev_sentiment.csv** Contains the sentiment classification results for each review (positive, neutral, negative).
 
 ### Structure of `df_reliverev`
 The `df_reliverev` dataset contains the following columns:
 
-| **Column**               | **Description**                                                             | **Data Type**    |
-|--------------------------|-----------------------------------------------------------------------------|------------------|
-| `reviewId`               | Unique identifier for each review                                            | Object           |
-| `userName`               | Name of the user who wrote the review                                        | Object           |
-| `userImage`              | URL of the user's profile image                                              | Object           |
-| `content`                | The text content of the user's review                                        | Object           |
-| `score`                  | Rating given by the user (1-5)                                               | Integer          |
-| `thumbsUpCount`          | Number of thumbs-up given by other users for this review                     | Integer          |
-| `reviewCreatedVersion`   | Version of the app when the review was written                               | Object           |
-| `at`                     | Date and time when the review was posted                                     | Datetime         |
-| `replyContent`           | Content of the reply given by the app developers (if any)                    | Object           |
-| `repliedAt`              | Date and time when the reply was posted (if any)                             | Datetime         |
-| `appVersion`             | Version of the app when the review was written                               | Object           |
+| **Column** | **Description** | **Data Type** |
+|---|---|---|
+| `reviewId` | Unique identifier for each review | Object |
+| `userName` | Name of the user who wrote the review | Object |
+| `userImage` | URL of the user's profile image | Object |
+| `content` | The text content of the user's review | Object |
+| `score` | Rating given by the user (1-5) | Integer |
+| `thumbsUpCount` | Number of thumbs-up given by other users for this review | Integer |
+| `reviewCreatedVersion` | Version of the app when the review was written | Object |
+| `at` | Date and time when the review was posted | Datetime |
+| `replyContent` | Content of the reply given by the app developers (if any) | Object |
+| `repliedAt` | Date and time when the reply was posted (if any) | Datetime |
+| `appVersion` | Version of the app when the review was written | Object |
 
 ---
 
@@ -102,15 +104,15 @@ To get started with this project, you need to set up a Python environment with t
 ### Prerequisites
 Make sure you have Python 3.7+ installed on your system. You will also need the following libraries:
 
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
-- tensorflow (for sentiment analysis)
-- nltk
-- googletrans
-- plotly
+-   pandas
+-   numpy
+-   matplotlib
+-   seaborn
+-   scikit-learn
+-   tensorflow (for sentiment analysis)
+-   nltk
+-   googletrans
+-   plotly
 
 ---
 
@@ -185,6 +187,11 @@ The sentiment analysis phase (covered in `04-relive_reviews_sentiment_analysis.i
     -   Assessing model performance using metrics such as accuracy, precision, recall, and F1-score.
     -   Analyzing confusion matrices and classification reports for each model and embedding strategy.
     -   Comparing the performance of different classifiers and embedding techniques through visualizations.
+
+### Model Performance
+Here is a comparison of the sentiment classification model accuracies across different embedding strategies:
+*Classifier Accuracies with Different Embeddings:*
+![Accuracies_by_embeddings](assets/visual5.png)
 
 ---
 
